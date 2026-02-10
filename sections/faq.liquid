@@ -1,0 +1,121 @@
+{{ 'component-accordion.css' | asset_url | stylesheet_tag }}
+{{ 'faq.css' | asset_url | stylesheet_tag }}
+
+<div class="faq" id="faq-{{ section.id }}">
+  <h3 class="faq--heading">{{ section.settings.heading }}</h3>
+    <div class="faq--items">
+    {% for block in section.blocks %}
+      <div class="faq--item">
+        <button class="faq--title">
+          {{ block.settings.title }}
+          <span class="faq--icon-wrapper">
+            <span class="faq--icon">
+              {{- 'icon-caret.svg' | inline_asset_content -}}
+            </span>
+          </span>
+        </button>
+        <div class="faq--content-wrapper">
+          <p class="faq--content">
+            {{ block.settings.content }}
+          </p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.querySelector('#faq-{{ section.id }}');
+    const titles = container.querySelectorAll('.faq--title');
+
+    const handleTitleClick = (event) => {
+      const targetItem = event.target.closest('.faq--item');
+      const expandedItem = container.querySelector('.faq--item--expanded');
+
+      if (expandedItem && (targetItem !== expandedItem)) {
+        expandedItem.classList.remove('faq--item--expanded');
+      }
+
+      targetItem.classList.toggle('faq--item--expanded');
+    };
+
+    for (const title of titles) {
+      title.addEventListener('click', handleTitleClick);
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "FAQ",
+  "settings": [
+    {
+      "default": "Frequently Asked Questions",
+      "id": "heading",
+      "label": "Heading",
+      "type": "text"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Item",
+      "type": "item",
+      "settings": [
+        {
+          "id": "title",
+          "label": "Title",
+          "type": "text"
+        },
+        {
+          "id": "content",
+          "label": "Content",
+          "type": "textarea"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ",
+      "blocks": [
+        {
+          "type": "item",
+          "settings": {
+            "title": "What is this FAQ section?",
+            "content": "A fully working FAQ with an on-page code viewer. Click \"View Code\" to see Liquid/CSS/JS and copy."
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "title": "What is this FAQ section?",
+            "content": "A fully working FAQ with an on-page code viewer. Click \"View Code\" to see Liquid/CSS/JS and copy."
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "title": "What is this FAQ section?",
+            "content": "A fully working FAQ with an on-page code viewer. Click \"View Code\" to see Liquid/CSS/JS and copy."
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "title": "What is this FAQ section?",
+            "content": "A fully working FAQ with an on-page code viewer. Click \"View Code\" to see Liquid/CSS/JS and copy."
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "title": "What is this FAQ section?",
+            "content": "A fully working FAQ with an on-page code viewer. Click \"View Code\" to see Liquid/CSS/JS and copy."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

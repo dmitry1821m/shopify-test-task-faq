@@ -11,6 +11,29 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "menu_blocks_Yta4qj": {
+      "type": "menu-blocks",
+      "blocks": {
+        "group_np3Bih": {
+          "type": "group",
+          "settings": {
+            "links": "my-menu-1"
+          }
+        },
+        "group_RKjEXW": {
+          "type": "group",
+          "settings": {
+            "links": "my-menu-2"
+          }
+        }
+      },
+      "block_order": [
+        "group_np3Bih",
+        "group_RKjEXW"
+      ],
+      "name": "Menu Blocks",
+      "settings": {}
+    },
     "footer": {
       "type": "footer",
       "settings": {
@@ -30,6 +53,7 @@
     }
   },
   "order": [
+    "menu_blocks_Yta4qj",
     "footer"
   ]
 }

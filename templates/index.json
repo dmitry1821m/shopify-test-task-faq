@@ -9,10 +9,21 @@
  */
 {
   "sections": {
-    "hero_VjpywW": {
-      "type": "hero",
-      "name": "Hero",
-      "settings": {}
+    "hero_custom_DmTkRK": {
+      "type": "hero-custom",
+      "name": "Hero Custom",
+      "settings": {
+        "heading": "FUEL STRENGTH. HYDRATION.\nRECOVERY — WITHOUT POWDERS.",
+        "description": "Science-formulated performance gummies delivering Creatine, BCAAs and Collagen in precise daily doses your body actually uses.",
+        "primary_button_text": "Shop Gummies",
+        "primary_button_link": "shopify://collections/all",
+        "secondary_button_text": "View The Science",
+        "secondary_button_link": "",
+        "stars": 5,
+        "rating": "4.9",
+        "review_count": "5000+",
+        "client_count": "50k+"
+      }
     },
     "featured_collection": {
       "type": "featured-collection",
@@ -95,7 +106,7 @@
     }
   },
   "order": [
-    "hero_VjpywW",
+    "hero_custom_DmTkRK",
     "featured_collection",
     "faq_WFawnH"
   ]

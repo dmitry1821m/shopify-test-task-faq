@@ -68,5 +68,9 @@
 }
 
 .hero--star {
+  color: #808080;
+}
+
+.hero--star--active {
   color: #5cadd6;
 }

@@ -19,6 +19,12 @@
         "button_link": "shopify://pages/contact"
       }
     },
+    "music_about": {
+      "type": "music-about"
+    },
+    "music_releases": {
+      "type": "music-releases"
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -50,6 +56,8 @@
   },
   "order": [
     "music_hero",
+    "music_about",
+    "music_releases",
     "featured_collection"
   ]
 }

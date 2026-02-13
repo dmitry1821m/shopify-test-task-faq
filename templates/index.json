@@ -13,7 +13,7 @@
       "type": "music-hero",
       "settings": {
         "background_image": "shopify://shop_images/wp2551273.jpg",
-        "heading": "Radeckt: Globalsound meetsadvanced digitalstrategy",
+        "heading": "Radeckt: Global\nsound meets\nadvanced digital\nstrategy",
         "description": "From melodic house to indie dance & techno - Radeckt delivers hypnotic club anthems and heads-down floor fillers, supported by the world's most influential selectors.",
         "button_text": "Get Early Access",
         "button_link": "shopify://pages/contact"
@@ -33,7 +33,49 @@
     },
     "music_releases": {
       "type": "music-releases",
-      "settings": {}
+      "blocks": {
+        "release_1": {
+          "type": "release",
+          "settings": {
+            "image": "shopify://shop_images/a-bridge-sitting-in-thick-pink-and-purple-fog.jpg",
+            "title": "Agustin Giri & Last Men on Earth",
+            "subtitle": "Radeckt & Ida Corr \"Midnight\""
+          }
+        },
+        "release_2": {
+          "type": "release",
+          "settings": {
+            "image": "shopify://shop_images/flatlay-of-jade-face-roller-laying-on-a-grey-stone.jpg",
+            "title": "Otun",
+            "subtitle": "Radeckt"
+          }
+        },
+        "release_3": {
+          "type": "release",
+          "settings": {
+            "image": "shopify://shop_images/green-and-white-marbled-coloring.jpg",
+            "title": "Like Dat",
+            "subtitle": "Radeckt + Aikon"
+          }
+        },
+        "release_4": {
+          "type": "release",
+          "settings": {
+            "image": "shopify://shop_images/two-people-surfing-in-blue-choppy-water.jpg",
+            "title": "Test 4th item",
+            "subtitle": "Test 3 columns without fixed rows"
+          }
+        }
+      },
+      "block_order": [
+        "release_1",
+        "release_2",
+        "release_3",
+        "release_4"
+      ],
+      "settings": {
+        "heading": "Key Releases"
+      }
     },
     "featured_collection": {
       "type": "featured-collection",

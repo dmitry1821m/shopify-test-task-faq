@@ -1,11 +1,62 @@
 {{ 'music-releases.css' | asset_url | stylesheet_tag }}
 
 <section class="music-releases">
-  music-releases
+  <div class="music-releases--container">
+    <h3 class="music-releases--heading">{{ section.settings.heading }}</h3>
+    <div class="music-releases--grid">
+      {% for block in section.blocks %}
+        <div class="music-releases--item">
+          {% if block.settings.image %}
+            <img
+              src="{{ block.settings.image | image_url }}"
+              class="music-releases--image"
+              height="auto"
+              width="auto"
+            >
+          {% endif %}
+          <p class="music-releases--title">{{ block.settings.title }}</p>
+          <p class="music-releases--subtitle">{{ block.settings.subtitle }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>
 
 {% schema %}
 {
-  "name": "Music Releases"
+  "name": "Music Releases",
+  "settings": [
+    {
+      "default": "Key Releases",
+      "id": "heading",
+      "label": "Heading",
+      "type": "text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "release",
+      "name": "Release",
+      "settings": [
+        {
+          "id": "image",
+          "label": "Image",
+          "type": "image_picker"
+        },
+        {
+          "default": "Album Title",
+          "id": "title",
+          "label": "Title",
+          "type": "text"
+        },
+        {
+          "default": "Artist Name",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "type": "text"
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}

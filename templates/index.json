@@ -9,6 +9,52 @@
  */
 {
   "sections": {
+    "sport_blocks": {
+      "type": "sport-blocks",
+      "blocks": {
+        "block_1": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/rack-of-womens-clothing.jpg",
+            "title": "Strength & Power (ATP Regeneration)",
+            "description": "Accelerating cellular ATP regeneration for explosive power."
+          }
+        },
+        "block_2": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/retail-shopping-package.jpg",
+            "title": "Muscle Recovery (Leucine-Triggered MPS)",
+            "description": "Triggering protein synthesis for faster muscle repair."
+          }
+        },
+        "block_3": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/small-business-interior.jpg",
+            "title": "Joint + Connective Repair",
+            "description": "Structural reinforcement for tendons and cartilage."
+          }
+        },
+        "block_4": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/iphone-detects-qr-code.jpg",
+            "title": "Test 4th item",
+            "description": "Test 3 columns without fixed rows"
+          }
+        }
+      },
+      "block_order": [
+        "block_1",
+        "block_2",
+        "block_3",
+        "block_4"
+      ],
+      "settings": {
+        "heading": "Product stack"
+      }
+    },
     "music_hero": {
       "type": "music-hero",
       "settings": {
@@ -107,6 +153,7 @@
     }
   },
   "order": [
+    "sport_blocks",
     "music_hero",
     "music_about",
     "music_releases",

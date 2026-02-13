@@ -14,11 +14,19 @@
     <div class="music-about--column">
       {% if right_image %}
         <img
-          src="{{ right_image | image_url }}"
           class="music-about--image"
+          height="auto"
           loading="lazy"
-          width="216px"
-          height="120px"
+          src="{{ right_image | image_url }}"
+          srcset="
+            {%- if right_image.width >= 100 -%}{{ right_image | image_url: width: 100 }} 100w,{%- endif -%}
+            {%- if right_image.width >= 200 -%}{{ right_image | image_url: width: 200 }} 200w,{%- endif -%}
+            {%- if right_image.width >= 400 -%}{{ right_image | image_url: width: 400 }} 400w,{%- endif -%}
+            {%- if right_image.width >= 800 -%}{{ right_image | image_url: width: 800 }} 800w,{%- endif -%}
+            {%- if right_image.width >= 1600 -%}{{ right_image | image_url: width: 1600 }} 1600w,{%- endif -%}
+            {{ right_image | image_url }} {{ right_image.width }}w
+          "
+          width="auto"
         >
       {% endif %}
       <h3 class="music-about--heading-right">{{ section.settings.column_right_heading }}</h3>

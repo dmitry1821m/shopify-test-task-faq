@@ -15,7 +15,7 @@
         "block_1": {
           "type": "product_block",
           "settings": {
-            "image": "shopify://shop_images/fall-vegetable-box.jpg"
+            "product": "audio-technica-ath-m50x"
           }
         },
         "block_2": {
@@ -29,7 +29,7 @@
         "block_3": {
           "type": "product_block",
           "settings": {
-            "image": "shopify://shop_images/close-up-of-a-pine-tree-showing-texture-of-pine-needles.jpg"
+            "product": "beats-solo-4-headphones"
           }
         },
         "block_4": {
@@ -43,7 +43,7 @@
         "block_5": {
           "type": "product_block",
           "settings": {
-            "image": "shopify://shop_images/fall-vegetable-box.jpg"
+            "product": "bose-quietcomfort-ultra-headphones"
           }
         },
         "block_6": {
@@ -57,7 +57,7 @@
         "block_7": {
           "type": "product_block",
           "settings": {
-            "image": "shopify://shop_images/close-up-of-a-pine-tree-showing-texture-of-pine-needles.jpg"
+            "product": "sony-wh-1000xm6-wireless"
           }
         },
         "block_8": {
@@ -67,7 +67,7 @@
             "title": "Why do we use it?",
             "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
           }
-        },
+        }
       },
       "block_order": [
         "block_1",

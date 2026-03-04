@@ -8,58 +8,51 @@
  * ------------------------------------------------------------
  */
 {
+  "name": "t:sections.footer.name",
   "type": "footer",
-  "name": "Footer",
   "sections": {
     "footer": {
       "type": "footer",
       "blocks": {
-        "logo_WxQFDe": {
-          "type": "logo",
+        "55172ef6-3a6a-4cfa-b790-88739b47891f": {
+          "type": "link_list",
           "settings": {
-            "logo": "shopify://shop_images/PROWL_FINALS_PRIMARY_PINK.png",
-            "logo_max_width": 400
+            "heading": "Quick links",
+            "menu": "main-menu"
           }
         },
-        "newsletter_La4dL9": {
-          "type": "newsletter",
+        "6e0c08d4-cd4c-439c-b5e2-a483bba29ec2": {
+          "type": "brand_information",
           "settings": {
-            "newsletter_heading": "Join the Prowl"
+            "show_social": true
           }
         },
-        "menus-0": {
-          "type": "menus",
+        "f95fe295-fbc2-4d2b-a952-72670c2ab328": {
+          "type": "text",
           "settings": {
-            "show_menu_headings": false,
-            "linklist_1": "footer-menu",
-            "linklist_2": "footer",
-            "linklist_3": ""
-          }
-        },
-        "tagline-and-social-links-0": {
-          "type": "tagline_and_social_links",
-          "settings": {
-            "tagline": "Find us on socials @prowloutdoors",
-            "show_social_icons": true
+            "heading": "Resources",
+            "subtext": "<ul><li><a href=\"https://shopify.dev/docs/apps/tools/development-stores/generated-data\" target=\"_blank\" title=\"Generated test data developer docs\">Generated test data docs</a></li><li><a href=\"https://shopify.dev/docs/apps/tools/graphiql-admin-api\" target=\"_blank\" title=\"GraphiQL API explorer\">GraphiQL API explorer</a></li></ul>"
           }
         }
       },
       "block_order": [
-        "logo_WxQFDe",
-        "newsletter_La4dL9",
-        "menus-0",
-        "tagline-and-social-links-0"
-      ],
-      "custom_css": [
-        ".secondary-text-link {font-weight: bold;}",
-        ".inline-rte {font-family: \"Dallas\"; font-weight: bold;}"
+        "55172ef6-3a6a-4cfa-b790-88739b47891f",
+        "6e0c08d4-cd4c-439c-b5e2-a483bba29ec2",
+        "f95fe295-fbc2-4d2b-a952-72670c2ab328"
       ],
       "settings": {
-        "show_payment_icons": true,
-        "show_country_selector": true,
-        "show_locale_selector": true,
-        "color_scheme": "scheme2",
-        "use_gradient_background": true
+        "color_scheme": "inverse",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": false,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 48,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
